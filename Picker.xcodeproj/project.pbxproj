@@ -13,6 +13,7 @@
 		C9C1735126963B020088F3C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C1734F26963B020088F3C9 /* Main.storyboard */; };
 		C9C1735326963B030088F3C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C1735226963B030088F3C9 /* Assets.xcassets */; };
 		C9C1735626963B030088F3C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C1735426963B030088F3C9 /* LaunchScreen.storyboard */; };
+		C9C1735E269666B30088F3C9 /* ButtonForPickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C1735D269666B30088F3C9 /* ButtonForPickers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C9C1735226963B030088F3C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9C1735526963B030088F3C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9C1735726963B030088F3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C1735D269666B30088F3C9 /* ButtonForPickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonForPickers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				C9C1734926963B020088F3C9 /* AppDelegate.swift */,
 				C9C1734B26963B020088F3C9 /* SceneDelegate.swift */,
 				C9C1734D26963B020088F3C9 /* ViewController.swift */,
+				C9C1735D269666B30088F3C9 /* ButtonForPickers.swift */,
 				C9C1734F26963B020088F3C9 /* Main.storyboard */,
 				C9C1735226963B030088F3C9 /* Assets.xcassets */,
 				C9C1735426963B030088F3C9 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9C1734E26963B020088F3C9 /* ViewController.swift in Sources */,
+				C9C1735E269666B30088F3C9 /* ButtonForPickers.swift in Sources */,
 				C9C1734A26963B020088F3C9 /* AppDelegate.swift in Sources */,
 				C9C1734C26963B020088F3C9 /* SceneDelegate.swift in Sources */,
 			);
