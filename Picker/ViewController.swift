@@ -10,11 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var avatar: UIImageView!
+    @IBOutlet private weak var avatar: UIImageView!
     @IBOutlet private weak var genderTextField: UITextField!
     @IBOutlet private weak var dateOfBirthTextField: UITextField!
   
-    private let gender = ["Male", "Female", "Unknown"]
+    private let gender: [Gender] = [.male, .female, .unknown]
     private let genderPicker = UIPickerView()
     private let dateOfBirthPicker = UIDatePicker()
     
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
      }
     
     func doneButtonForPickers() {
-        let doneButton = UIToolbar().ToolbarPiker(mySelect: #selector(dismissPicker))
+        let doneButton = UIToolbar().toolbarPiker(mySelect: #selector(dismissPicker))
         dateOfBirthTextField.inputAccessoryView = doneButton
         genderTextField.inputAccessoryView = doneButton
     }
@@ -99,13 +99,13 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        genderTextField.text = gender[row]
+        genderTextField.text = gender[row].rawValue
         
         guard let textFromPicker = genderTextField.text else {
             return
         }
         
-        let genderText = ImageGender(rawValue: textFromPicker)
+        let genderText = Gender(rawValue: textFromPicker)
         
         switch genderText {
             case .male:
@@ -121,7 +121,7 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return gender[row]
+        return gender[row].rawValue
     }
 }
 

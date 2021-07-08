@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C91B556526970B5500459305 /* ImageGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B556426970B5500459305 /* ImageGender.swift */; };
+		C91B556526970B5500459305 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B556426970B5500459305 /* Gender.swift */; };
 		C9C1734A26963B020088F3C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C1734926963B020088F3C9 /* AppDelegate.swift */; };
 		C9C1734C26963B020088F3C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C1734B26963B020088F3C9 /* SceneDelegate.swift */; };
 		C9C1734E26963B020088F3C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C1734D26963B020088F3C9 /* ViewController.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C91B556426970B5500459305 /* ImageGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGender.swift; sourceTree = "<group>"; };
+		C91B556426970B5500459305 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		C9C1734626963B020088F3C9 /* Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C1734926963B020088F3C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9C1734B26963B020088F3C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 				C9C1734926963B020088F3C9 /* AppDelegate.swift */,
 				C9C1734B26963B020088F3C9 /* SceneDelegate.swift */,
 				C9C1734D26963B020088F3C9 /* ViewController.swift */,
-				C91B556426970B5500459305 /* ImageGender.swift */,
+				C91B556426970B5500459305 /* Gender.swift */,
 				C9C1735D269666B30088F3C9 /* ButtonForPickers.swift */,
 				C9C1734F26963B020088F3C9 /* Main.storyboard */,
 				C9C1735226963B030088F3C9 /* Assets.xcassets */,
@@ -147,7 +147,7 @@
 				C9C1735E269666B30088F3C9 /* ButtonForPickers.swift in Sources */,
 				C9C1734A26963B020088F3C9 /* AppDelegate.swift in Sources */,
 				C9C1734C26963B020088F3C9 /* SceneDelegate.swift in Sources */,
-				C91B556526970B5500459305 /* ImageGender.swift in Sources */,
+				C91B556526970B5500459305 /* Gender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
