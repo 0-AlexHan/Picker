@@ -18,6 +18,10 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xT-wX-VEc">
                                 <rect key="frame" x="87" y="375" width="57" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="K5m-qY-NK4"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="57" id="sH0-0i-z17"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -25,7 +29,8 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sLp-Nt-bCJ">
                                 <rect key="frame" x="198" y="368" width="150" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Sy8-Ua-5nf"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="Sy8-Ua-5nf"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="iJj-qh-44h"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -35,6 +40,10 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaT-LP-geT">
                                 <rect key="frame" x="67" y="452" width="97" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="97" id="1Bk-qO-Zv9"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="Xvn-WJ-5D4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -42,7 +51,8 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XXR-PM-szp">
                                 <rect key="frame" x="198" y="445" width="150" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="J3A-QW-iFF"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="J3A-QW-iFF"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="dIf-v1-xUc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -54,6 +64,7 @@
                                 <rect key="frame" x="147" y="188" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="6ad-fN-EQT"/>
+                                    <constraint firstAttribute="width" constant="120" id="Pen-3o-zsL"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -70,9 +81,9 @@
                             <constraint firstItem="5xT-wX-VEc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="ud3-oC-6u0"/>
                             <constraint firstItem="eaT-LP-geT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="w24-i5-yT5"/>
                             <constraint firstItem="XXR-PM-szp" firstAttribute="leading" secondItem="eaT-LP-geT" secondAttribute="trailing" constant="34" id="wld-4x-gTJ"/>
-                            <constraint firstItem="01e-Dk-5YA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="xXd-BV-J9p"/>
+                            <constraint firstItem="01e-Dk-5YA" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="xXd-BV-J9p"/>
                             <constraint firstItem="sLp-Nt-bCJ" firstAttribute="top" secondItem="01e-Dk-5YA" secondAttribute="bottom" constant="60" id="yLz-XU-ypA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="01e-Dk-5YA" secondAttribute="trailing" constant="147" id="zZS-7a-Cdp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="01e-Dk-5YA" secondAttribute="trailing" constant="147" id="zZS-7a-Cdp"/>
                         </constraints>
                     </view>
                     <connections>

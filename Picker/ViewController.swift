@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     }
     
     private func setupElements(){
-        
+        let yearRange = -80
         genderPicker.dataSource = self
         genderPicker.delegate = self
         
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         dateOfBirthPicker.datePickerMode = .date
         dateOfBirthPicker.preferredDatePickerStyle = .wheels
         
-        dateOfBirthPicker.minimumDate = Calendar.current.date(byAdding: .year, value: -80, to: Date())
+        dateOfBirthPicker.minimumDate = Calendar.current.date(byAdding: .year, value: yearRange, to: Date())
         dateOfBirthPicker.maximumDate = Date()
         
         dateOfBirthPicker.addTarget(self, action: #selector(dateOfBirth(pickerDidChange:)),
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         
         avatar.image = #imageLiteral(resourceName: "Default")
         
-        avatar.layer.cornerRadius = avatar.frame.height / 2
+        avatar.layer.cornerRadius = avatar.bounds.width / 2
         
         doneButtonForPickers()
     }
@@ -101,15 +101,23 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         genderTextField.text = gender[row]
         
-        if genderTextField.text == "Male" {
-            avatar.image = #imageLiteral(resourceName: "Male")
+        guard let textFromPicker = genderTextField.text else {
+            return
         }
-        if genderTextField.text == "Female" {
-            avatar.image = #imageLiteral(resourceName: "Female")
+        
+        let genderText = ImageGender(rawValue: textFromPicker)
+        
+        switch genderText {
+            case .male:
+                avatar.image = #imageLiteral(resourceName: "Male")
+            case .female:
+                avatar.image = #imageLiteral(resourceName: "Female")
+            case .unknown:
+                avatar.image = #imageLiteral(resourceName: "Unknown")
+            default:
+                avatar.image = #imageLiteral(resourceName: "Default")
         }
-        if genderTextField.text == "Unknown" {
-            avatar.image = #imageLiteral(resourceName: "Unknown")
-        }
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
